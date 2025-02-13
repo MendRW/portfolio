@@ -52,6 +52,14 @@ nav,
     display: flex;
 }
 
+.nav-arrow:hover {
+    cursor: pointer;
+}
+.nav-arrow {
+    height: 48px;
+    width: 48px
+}
+
 nav {
     justify-content: space-around;
     align-items: center;
@@ -271,3 +279,79 @@ section {
     gap: 1rem;
 }
 
+/* Icon style */
+.RPG-image-container {
+    position: relative;
+    width: 48px;
+    height: 48px;
+}
+
+.hover-RPG-IMG, .default-RPG-IMG {
+    transition: opacity 0.3s ease;
+    position: absolute;
+}
+
+.hover-RPG-IMG {
+    opacity: 0;
+}
+
+.RPG-image-container:hover .default-RPG-IMG {
+    opacity: 0;
+}
+
+.RPG-image-container:hover .hover-RPG-IMG {
+    opacity: 1;
+}
+
+/* Experience cards */
+
+.experience-details-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 1rem; 
+    padding: 1rem; 
+}
+
+.card {
+    width: 100%;
+    max-width: 290px;
+    height: 70px;
+    background: #353535;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease-in-out;
+    padding-left: 10px;
+    justify-content: flex-start;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+  .card-text {
+    width: calc(100% - 90px);
+    margin-left: 10px;
+    color: white;
+    margin-left: 10px;
+}
+
+.img-container {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+    width: auto;
+}
