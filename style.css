@@ -318,7 +318,7 @@ section {
     width: 100%;
     max-width: 290px;
     height: 70px;
-    background: #353535;
+    background:rgb(56, 55, 55);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -327,6 +327,9 @@ section {
     transition: 0.5s ease-in-out;
     padding-left: 10px;
     justify-content: flex-start;
+}
+.card img:hover {
+    filter: invert(1);
 }
 
 .card:hover {

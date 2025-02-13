@@ -101,3 +101,9 @@
       text-align: justify;
     }
   }
+
+  @media (max-width: 768px) {
+    .details-container.card {
+      max-width: 100%; 
+    }
+  }
