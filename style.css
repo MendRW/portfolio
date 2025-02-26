@@ -727,3 +727,174 @@ ul {
       transform: rotate(-1turn);
     }
   }
+
+  /* Eye Button Styling */
+.eye-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+
+.eye-btn:hover {
+  transform: scale(1.1);
+}
+
+.eye-btn:focus {
+  outline: none;
+}
+
+.eye-icon {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye-outline {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  border: 2px solid #4285f4;
+  border-radius: 100px / 50px;
+  transition: all 0.3s ease;
+}
+
+.eye-pupil {
+  width: 10px;
+  height: 10px;
+  background-color: #4285f4;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+
+.eye-btn .eye-outline {
+  border-color: #4285f4;
+}
+
+.eye-btn .eye-pupil {
+  background-color: #4285f4;
+}
+
+
+.experience-details.expanded + .eye-btn .eye-outline,
+.experience-box.open .eye-btn .eye-outline {
+  border-color: #3367d6;
+}
+
+.experience-details.expanded + .eye-btn .eye-pupil,
+.experience-box.open .eye-btn .eye-pupil {
+  background-color: #3367d6;
+}
+
+
+.experience-box.closed .eye-btn .eye-outline {
+  height: 3px;
+  margin-top: 0;
+  border-radius: 100px;
+}
+
+.experience-box.closed .eye-btn .eye-pupil {
+  opacity: 0;
+}
+
+/* extended button for experience section */
+
+.experience-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.experience-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  background-color: white;
+}
+
+.experience-header {
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.experience-header:hover {
+  background-color: #f9f9f9;
+}
+
+.experience-header h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.company {
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  color: #555;
+}
+
+.dates {
+  color: #777;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.expand-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.expand-btn:hover {
+  background-color: #3367d6;
+}
+
+.experience-details {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.experience-details.expanded {
+  max-height: 1000px; /* adjust later if it won't fit */
+  padding: 0 20px 20px;
+}
+
+.experience-details h4 {
+  margin: 15px 0 10px 0;
+  color: #444;
+}
+
+.experience-details ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.experience-details li {
+  margin-bottom: 5px;
+}
+
