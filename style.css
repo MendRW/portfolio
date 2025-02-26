@@ -898,3 +898,46 @@ ul {
   margin-bottom: 5px;
 }
 
+
+.experience-box.open .eye-icon .eye-pupil {
+  transform: scale(1);
+}
+
+.experience-box.closed .eye-icon .eye-pupil {
+  transform: scale(0.7);
+}
+
+.eye-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.eye-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye-outline {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #555;
+  border-radius: 50%;
+}
+
+.eye-pupil {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #555;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
