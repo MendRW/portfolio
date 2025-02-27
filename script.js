@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (eyeBtn) {
           eyeBtn.addEventListener('click', function(e) {
-            e.stopPropagation(); // Prevent the header click from also firing
+            e.stopPropagation();
             toggleDetails(box, details);
           });
         }
