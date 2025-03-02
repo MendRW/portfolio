@@ -133,7 +133,7 @@ a:hover {
     width: fit-content;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-links a {
@@ -194,6 +194,10 @@ section {
 }
 
 /* profile */
+
+.btn {
+  padding: 1 rem;
+}
 
 #profile {
     display: flex;
